@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-19T00:00:00Z",
+  "global_kill_switch": false,
+  "min_supported_version_code": 1,
+  "cache_ttl_seconds": 300,
+  "notices": {
+    "maintenance_banner": null
+  },
+  "engines": {
+    "engine_yt": {
+      "enabled": true,
+      "search_enabled": true,
+      "download_enabled": true,
+      "stream_only": false,
+      "display_label": "Long-Form Media",
+      "priority": 1,
+      "url_patterns": [
+        "^https?://(www\\.|m\\.|music\\.)?(youtube\\.com|youtu\\.be)/.+$"
+      ],
+      "user_agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+    },
+    "engine_tt": {
+      "enabled": true,
+      "search_enabled": false,
+      "download_enabled": true,
+      "stream_only": false,
+      "display_label": "Short Clip Feed",
+      "priority": 2,
+      "url_patterns": [
+        "^https?://(www\\.|m\\.|vt\\.|vm\\.)?tiktok\\.com/.+$"
+      ],
+      "user_agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+    },
+    "engine_ig": {
+      "enabled": true,
+      "search_enabled": false,
+      "download_enabled": true,
+      "stream_only": false,
+      "display_label": "Visual Reel Stream",
+      "priority": 3,
+      "url_patterns": [
+        "^https?://(www\\.|m\\.)?(instagram\\.com|instagr\\.am)/(p|reel|reels|tv|stories)/.+$"
+      ],
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
+    },
+    "engine_fb": {
+      "enabled": true,
+      "search_enabled": false,
+      "download_enabled": true,
+      "stream_only": false,
+      "display_label": "Social Video Feed",
+      "priority": 4,
+      "url_patterns": [
+        "^https?://(www\\.|m\\.|mbasic\\.|web\\.)?(facebook\\.com|fb\\.watch)/.+$"
+      ],
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    "engine_x": {
+      "enabled": true,
+      "search_enabled": false,
+      "download_enabled": true,
+      "stream_only": false,
+      "display_label": "Microblog Media",
+      "priority": 5,
+      "url_patterns": [
+        "^https?://(www\\.|mobile\\.)?(twitter\\.com|x\\.com)/.+/status/\\d+.*$"
+      ],
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    "engine_th": {
+      "enabled": true,
+      "search_enabled": false,
+      "download_enabled": true,
+      "stream_only": false,
+      "display_label": "Thread Clip",
+      "priority": 6,
+      "url_patterns": [
+        "^https?://(www\\.)?threads\\.net/@[^/]+/post/.+$"
+      ],
+      "user_agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36"
+    }
+  }
+}
